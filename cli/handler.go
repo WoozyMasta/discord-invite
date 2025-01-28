@@ -32,9 +32,12 @@ func newHandler(cfg *Config, logger zerolog.Logger) http.Handler {
 					http.Error(w, "Failed to generate Discord invite", http.StatusInternalServerError)
 					return
 				}
-				log.Debug().Msgf("Created invite code %s", inviteCode)
+				logger.Debug().
+					Str("invite", inviteCode).
+					Str("remote", r.RemoteAddr).
+					Msg("generate invite code")
 				redirectURL := fmt.Sprintf("https://discord.gg/%s", inviteCode)
-				http.Redirect(w, r, redirectURL, http.StatusMovedPermanently)
+				http.Redirect(w, r, redirectURL, http.StatusFound)
 			})),
 		),
 	)
