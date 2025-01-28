@@ -2,7 +2,7 @@
 # require upx
 set -eu
 
-: "${WORK_DIR:=${1:-./cli}}"
+: "${WORK_DIR:=${1:-cli}}"
 : "${BIN_NAME:=discord-invite}"
 
 build() {
