@@ -177,6 +177,8 @@ Your support is greatly appreciated!
 
 <!-- Links -->
 [logo]: winres/icon64.png
+[ghcr]: https://github.com/WoozyMasta/discord-invite/pkgs/container/discord-invite
+[docker]: https://hub.docker.com/r/woozymasta/discord-invite
 [MacOS arm64]: https://github.com/WoozyMasta/discord-invite/releases/latest/download/discord-invite-darwin-arm64 "MacOS arm64 file"
 [MacOS amd64]: https://github.com/WoozyMasta/discord-invite/releases/latest/download/discord-invite-darwin-amd64 "MacOS amd64 file"
 [Linux i386]: https://github.com/WoozyMasta/discord-invite/releases/latest/download/discord-invite-linux-386 "Linux i386 file"
