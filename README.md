@@ -5,7 +5,7 @@
 The Discord Invite Link Generator is a application designed to create and
 manage invite links for a specified Discord channel. It provides a simple
 HTTP server that generates unique invite links based on configurable
-parameters.
+parameters. Use Discord Create Channel Invite [API].
 
 You can configure maximum age, usage limits, and uniqueness of generated
 invite links.
@@ -192,3 +192,4 @@ Your support is greatly appreciated!
 [Windows i386]: https://github.com/WoozyMasta/discord-invite/releases/latest/download/discord-invite-windows-386.exe "Windows i386 file"
 [Windows amd64]: https://github.com/WoozyMasta/discord-invite/releases/latest/download/discord-invite-windows-amd64.exe "Windows amd64 file"
 [Windows arm64]: https://github.com/WoozyMasta/discord-invite/releases/latest/download/discord-invite-windows-arm64.exe "Windows arm64 file"
+[API]: https://discord.com/developers/docs/resources/channel#create-channel-invite
