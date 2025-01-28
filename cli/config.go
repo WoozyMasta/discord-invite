@@ -29,7 +29,6 @@ type Config struct {
 // It also configures the logging settings.
 func setup() *Config {
 	zerolog.TimeFieldFormat = time.RFC3339
-	zerolog.SetGlobalLevel(zerolog.InfoLevel)
 
 	noColor := true
 	fd := int(os.Stdout.Fd()) // #nosec G115
@@ -63,9 +62,9 @@ func setup() *Config {
 
 	if logLevel, err := zerolog.ParseLevel(cfg.LogLevel); err != nil || cfg.LogLevel == "" {
 		log.Warn().Msgf("Log level '%s' is unknown or empty, falling back to 'info' level", cfg.LogLevel)
-		log.Logger = log.Level(zerolog.InfoLevel)
+		zerolog.SetGlobalLevel(zerolog.InfoLevel)
 	} else {
-		log.Logger = log.Level(logLevel)
+		zerolog.SetGlobalLevel(logLevel)
 	}
 
 	return cfg
