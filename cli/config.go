@@ -52,13 +52,13 @@ func setup() *Config {
 	p.Command.Name = filepath.Base(p.Command.Name)
 
 	_, err := p.Parse()
+	if cfg.Version {
+		printVersion()
+	}
 	if err != nil {
 		// p.WriteHelp(os.Stdout)
 		fmt.Fprintf(os.Stderr, "\n%s\n", err)
 		os.Exit(1)
-	}
-	if cfg.Version {
-		printVersion()
 	}
 
 	if logLevel, err := zerolog.ParseLevel(cfg.LogLevel); err != nil || cfg.LogLevel == "" {
