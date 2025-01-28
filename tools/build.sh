@@ -16,7 +16,7 @@ build() {
   CGO_ENABLED=0 GOARCH="$GOARCH" GOOS="$GOOS" \
   GOFLAGS="-buildvcs=false -trimpath" \
     go build -ldflags="-s -w -X '$version' -X '$commit' -X '$date' -X '$url'" \
-      -o "./build/$bin" -tags=forceposix "$WORK_DIR/"
+      -o "./build/$bin" -tags=forceposix "$WORK_DIR"/*.go
 
   [ "$GOOS" = "windows" ] && GOARCH="$GOARCH" go-winres patch \
     --no-backup --in "winres/winres.json" "./build/$bin"
