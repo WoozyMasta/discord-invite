@@ -26,7 +26,7 @@ type InviteResponse struct {
 // makeInvite generates a new Discord invite by sending a request to the Discord API.
 // It returns the invite code or an error if the operation fails.
 func (c *Config) makeInvite() (string, error) {
-	url := fmt.Sprintf("https://discord.com/api/v9/channels/%s/invites", c.ChannelID)
+	url := fmt.Sprintf("https://discord.com/api/v10/channels/%s/invites", c.ChannelID)
 
 	inviteReq := InviteRequest{
 		MaxAge:  c.MaxAge,
