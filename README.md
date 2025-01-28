@@ -10,6 +10,10 @@ parameters.
 You can configure maximum age, usage limits, and uniqueness of generated
 invite links.
 
+> In essence, this utility solves one problem, makes links for adding to
+> Discord servers eternal, now you don’t have to worry about updating links
+> or server boosts.
+
 ## Configuration
 
 The application can be configured using command-line flags or
