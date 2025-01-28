@@ -32,7 +32,8 @@ func setup() *Config {
 	zerolog.SetGlobalLevel(zerolog.InfoLevel)
 
 	noColor := true
-	if term.IsTerminal(int(os.Stdout.Fd())) { // #nosec G115
+	fd := int(os.Stdout.Fd()) // #nosec G115
+	if term.IsTerminal(fd) {
 		noColor = false
 	}
 
