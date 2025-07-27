@@ -1,3 +1,6 @@
+// Package main implements a lightweight HTTP server that generates Discord invite links
+// on demand using the Discord Bot API. The server provides logging, configurable parameters,
+// and graceful shutdown handling.
 package main
 
 import (

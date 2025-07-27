@@ -13,6 +13,18 @@ and this project adheres to [Semantic Versioning][].
 ### Removed
 
 -->
+## [0.1.2][] - 2025-07-27
+
+### Added
+
+* Certificate authority certificates to container image (Close #1)
+
+### Changed
+
+* Upgrade golang ci lint and fix issues
+* Update direct go dependencies
+
+[0.1.2]: https://github.com/WoozyMasta/discord-invite/compare/v0.1.1...v0.1.2
 
 ## [0.1.1][] - 2025-01-28
 

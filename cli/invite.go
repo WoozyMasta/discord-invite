@@ -63,7 +63,7 @@ func (c *Config) makeInvite() (string, error) {
 
 	if resp.StatusCode != http.StatusOK && resp.StatusCode != http.StatusCreated {
 		body, _ := io.ReadAll(resp.Body)
-		return "", fmt.Errorf("Discord API error: %d %s - %s", resp.StatusCode, resp.Status, string(body))
+		return "", fmt.Errorf("discord API error: %d %s - %s", resp.StatusCode, resp.Status, string(body))
 	}
 
 	var inviteResp InviteResponse

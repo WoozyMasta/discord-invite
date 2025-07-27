@@ -4,9 +4,9 @@ go 1.23.1
 
 require (
 	github.com/jessevdk/go-flags v1.6.1
-	github.com/rs/zerolog v1.33.0
-	golang.org/x/sys v0.29.0
-	golang.org/x/term v0.28.0
+	github.com/rs/zerolog v1.34.0
+	golang.org/x/sys v0.34.0
+	golang.org/x/term v0.33.0
 )
 
 require (

@@ -48,7 +48,7 @@ func setup() *Config {
 
 	p.Usage = "[OPTIONS]"
 	p.LongDescription = "Invite links generator for Discord channel."
-	p.Command.Name = filepath.Base(p.Command.Name)
+	p.Name = filepath.Base(p.Name)
 
 	_, err := p.Parse()
 	if cfg.Version {
