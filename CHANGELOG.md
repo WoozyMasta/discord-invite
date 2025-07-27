@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning][].
 
 ### Added
 
-* Certificate authority certificates to container image (Close #1)
+* Certificate authority certificates to container image
 
 ### Changed
 
