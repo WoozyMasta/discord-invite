@@ -1,6 +1,7 @@
 //go:build !windows
 // +build !windows
 
+// Package service is helper for run process as service in other OS non Windows
 package service
 
 import "github.com/rs/zerolog/log"
